@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+
+.buttons-top{
+    font-size: 20px;
+    cursor: pointer;
+    border: 0px;
+    background-color: white;
+    margin: 50px 0px;
+}
+
+.inputs{
+    padding-left: 14px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+.button-register2{
+    cursor: pointer;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+    background-color:#46A358;
+    border-radius: 5px;
+    width: 300px;
+    height: 45px;
+    margin: 40px 0px 40px 0px;
+}
+
+.buttons-bottom{
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    margin: 30px 0px 15px 0px;
+}
