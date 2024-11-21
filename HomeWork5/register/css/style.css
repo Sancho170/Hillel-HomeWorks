@@ -25,7 +25,7 @@
     color: #3D3D3D;
     font-size: 18px;
     line-height: 16px;
-    margin: 0px 10px 0px 12px;
+    padding: 0px 10px 0px 12px;
 }
 
 .login-register a:nth-of-type(2){
@@ -41,14 +41,14 @@
 
 /* кінець блоку з логіном та регістрацією */
 
+/* Початок форми */
+
 .text1{
     color: #3D3D3D;
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 14px;
 }
-
-/* Початок форми */
 
 .line {
     margin-bottom: 16px;
@@ -73,7 +73,7 @@
     border-radius: 5px;
     border: 0px;
     cursor: pointer;
-    background: #46A358;
+    background-color: #46A358;
     color: #FFF;
     font-size: 16px;
     line-height: 16px;
@@ -89,7 +89,11 @@
     text-align: center;
     margin-bottom: 27px;
 }
+/* початок блоку з посиланнями */
 
+.block-continue a:nth-of-type(2){
+    margin-top: 15px;
+}
 .continue {
     border: 1px solid #EAEAEA;
     border-radius: 5px;
@@ -98,15 +102,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    text-decoration: none;
+    color: #727272;
+    font-size: 13px;
+    line-height: 16px;
 
     display: block;
 }
-
-.block-continue a:nth-of-type(2){
-    margin-top: 15px;
-}
-
 .continue img {
     display: inline-block;
     vertical-align: middle;
 }
+/* кінець блоку з посиланнями */
