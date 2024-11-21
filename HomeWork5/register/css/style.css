@@ -14,6 +14,46 @@
     margin: 50px auto;
 }
 
+/* початок блоку з логіном та регістрацією */
+
+.login-register{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login-register span{
+    color: #3D3D3D;
+    font-size: 18px;
+    line-height: 16px;
+    margin: 0px 10px 0px 12px;
+}
+
+.login-register a:nth-of-type(2){
+    color: #46A358;
+}
+
+.ref{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+/* кінець блоку з логіном та регістрацією */
+
+.text1{
+    color: #3D3D3D;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 14px;
+}
+
+/* Початок форми */
+
+.line {
+    margin-bottom: 16px;
+}
+
 .default-input {
     font-size: 14px;
     line-height: 16px;
@@ -27,8 +67,27 @@
     width: 270px;
 }
 
-.line {
-    margin-bottom: 16px;
+.register-button{
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    background: #46A358;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 25px 0px 36px 0px;
+}
+
+/* кінець форми */
+
+.text2{
+    color: #3D3D3D;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 27px;
 }
 
 .continue {
@@ -43,6 +102,9 @@
     display: block;
 }
 
+.block-continue a:nth-of-type(2){
+    margin-top: 15px;
+}
 
 .continue img {
     display: inline-block;
