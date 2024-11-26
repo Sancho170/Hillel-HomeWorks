@@ -12,27 +12,25 @@
     margin: 0 auto;
 }
 
+/* початок оформлення header */
 .header {
+    font-size: 0;
     border-bottom: 0.3px solid rgba(70, 163, 88, 0.50);
 }
 
+/* логотип */
 .header-logo {
     display: inline-block;
     vertical-align: top;
 }
 
+/* логотип */
 
+/* навігація */
 .header-nav {
     display: inline-block;
     vertical-align: top;
-    margin: 8px 370px 0px 229px;
-}
-
-.list-item {
-    text-decoration: none;
-    color: #3D3D3D;
-    font-size: 15px;
-    line-height: normal;
+    margin: 8px 375px 0px 238px;
 }
 
 .nav-list {
@@ -47,27 +45,121 @@
     margin-right: 50px;
 }
 
-.nav-list li:hover{
+.nav-list li:hover {
     border-bottom: 3px solid #46A358;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 }
 
 .nav-list li:last-child {
     margin-right: 0;
 }
 
+.list-item {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 15px;
+}
+
+/* навігація */
+
+/* кнопка login */
 .header-login {
     display: inline-block;
     vertical-align: top;
+    padding-bottom: 18px;
 }
 
-.button-login{
+.button-login {
     background-color: #46A358;
     border-radius: 6px;
     border: 0px;
     color: #ffffff;
     cursor: pointer;
     font-size: 16px;
-    line-height: normal;
-    padding: 5.5px 15px;
+    padding: 7px 20px;
 }
+
+.button-login img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* кнопка login */
+/* кінець оформлення header */
+
+/* початок оформлення section  */
+.greenshop-section {
+    font-size: 0;
+    margin-top: 12px;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+}
+
+/* блок з текстом */
+.greenshop-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 630px;
+    padding: 68px 0px 85px 43px;
+    margin-right: 58px;
+}
+
+.welcome-grenshop {
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+}
+
+.greenshop-title {
+    color: #3D3D3D;
+    font-size: 70px;
+    font-style: normal;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.planet-word {
+    color: #46A358;
+}
+
+.greenshop-description {
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 44px;
+}
+
+/* блок з текстом */
+
+/* кнопка Shop now */
+.shop-now-link {
+    background-color: #46A358;
+    border: 0px;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 26px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+/* кнопка Shop now */
+
+/* блок з картинкою */
+.img-plants {
+    display: inline-block;
+    vertical-align: top;
+    width: 507px;
+}
+/* блок з картинкою */
+/* кінець оформлення section */
