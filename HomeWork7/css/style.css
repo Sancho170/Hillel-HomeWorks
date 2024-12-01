@@ -27,7 +27,7 @@
 }
 
 .categories {
-    margin: 14px 0px 19px 18px;
+    padding: 14px 0px 19px 18px;
     background-color: #FBFBFB;
 }
 
@@ -126,6 +126,7 @@
 /* сортировка */
 /* шапка продукції */
 
+
 .products-grid{
     width: 840px;
     margin-top: 31px;
@@ -137,51 +138,62 @@
     margin-right: 33px;
     margin-bottom: 70px;
 }
-
 .mr-0{
     margin-right: 0px;
 }
 
-/* Пагінація */
-.pagination-block{
-    width: 840px;
-    margin-top: 90px;
+.card4{
+    height: 254px;
 }
 
-.pagination{
-    float: right;
-}
-
-.pagination-list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.pagination-list li{
-    float: left;
-    margin-right: 7.3px;
-}
-
-.pagination-list li:nth-of-type(5){
-    margin-right: 0px;
-}
-
-
-.pagination-list a{
-    text-decoration: none;
+.title-card{
     color: #3D3D3D;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.price-card{
+    color: #46A358;
     font-size: 18px;
     line-height: 16px;
-    padding: 9px 12px 10px 13px;
-    border-radius: 4px;
-    border: 1px solid #E5E5E5;
 }
 
-.pagination-list a:hover{
+
+/* Пагінація */
+.pagination-block {
+    float: right;
+    margin-top: 90px;
+    margin-bottom: 82px;
+}
+
+.pagination-link {
+    float: left;    
+    margin-right: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 16px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.pagination-link:hover {
+    background-color: #46A358;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.pagination-link.active {
     background-color: #46A358;
     color: #ffffff;
     font-weight: bold;
+}
+
+.pagination-link:last-child {
+    margin-right: 0;
 }
 /* Пагінація */
 /* Кінець секції з продукцією */
