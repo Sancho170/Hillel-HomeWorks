@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.middle-section {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* Початок верхнього блока */
+.block-for-big-cards {
+    display: flex;
+    justify-content: space-between;
+}
+/* картки */
+.big-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #FBFBFB;
+    width: 586px;
+    margin-top: 69px;
+    padding: 37px 30px 46px 0px;
+    position: relative;
+}
+/* контейнер картинок */
+.big-card-image-container {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+/* контейнер картинок */
+/* заголовок */
+.big-card-title {
+    color: #3D3D3D;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+    text-transform: uppercase;
+    width: 170px;
+    text-align: right;
+}
+/* заголовок */
+/* параграф */
+.big-card-description {
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 9px;
+    margin-bottom: 25px;
+    width: 290px;
+    text-align: right;
+}
+/* параграф */
+/* кнопка */
+.big-card-find-more {
+    display: flex;
+    width: 140px;
+    justify-content: center;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #46A358;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 11px 0px 9px 0px;
+}
+/* кнопка */
+/* картки */
+/* Кінець верхнього блока */
+
+/* початок блоку з блогом */
+.block-our-blog {
+    display: flex;
+    flex-direction: column;
+    margin-top: 138px;
+    margin-bottom: 68px;
+}
+/* блок з заголовком та параграфом*/
+/* заголовок */
+.block-our-blog-title {
+    align-self: center;
+    color: #3D3D3D;
+    font-size: 30px;
+    line-height: 16px;
+    margin: 0px;
+}
+/* заголовок */
+/* параграф */
+.block-our-blog-description {
+    align-self: center;
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+/* параграф */
+/* блок з заголовком та параграфом*/
+
+/* блок з картками */
+.block-our-blog-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card-container {
+    width: 268px;
+}
+/* картка в блозі */
+.blog-card-content {
+    margin: 9px 11px 12px 15px;
+}
+
+.blog-card-meta {
+    color: #46A358;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.blog-card-title {
+    width: 189px;
+    color: #3D3D3D;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0px;
+    margin-top: 4px;
+}
+
+.blog-card-description {
+    width: 242px;
+    color: #727272;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 4px;
+    margin-bottom: 9px;
+}
+
+.blog-card-read-more {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-flex;
+}
+
+.blog-card-read-more:hover {
+    color: #46A358;
+}
+
+.blog-card-read-more:hover path {
+    fill: #46A358;
+}
+/* картка в блозі */
+/* блок з картками */
+/* кінець блоку з блогом */
