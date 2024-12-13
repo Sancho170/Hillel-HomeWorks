@@ -1,0 +1,683 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: 'Cera Pro', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1220px;
+    min-width: 991px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Початок шапки */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.50);
+    padding-bottom: 20.5px;
+}
+
+.logo {
+    display: block;
+}
+
+.header-menu {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header-menu > li {
+    margin: 0 25px;
+    position: relative;
+}
+
+.header-menu > li >a {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 16px;
+}
+
+.header-menu > li:hover{
+    padding-bottom: 25px;
+    border-bottom: 3px solid #46A358;
+}
+
+.header-menu > li:hover .submenu{
+    display: b;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    padding: 0;
+    list-style: none;
+    left: 0;
+    top: 60.5px;
+    width: 188px;
+    background-color: #EDF6EE;
+}
+
+.submenu > li{
+    padding: 7px 0 8px 14px;
+    position: relative;
+}
+
+
+.submenu > li >a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 16px;
+}
+
+.submenu svg{
+    position: absolute;
+    top: 12px;
+    right: 17px;
+}
+
+
+.header-block-ref {
+    display: flex;
+    align-items: center;
+}
+
+.header-loupe {
+    background-image: url(../img/loupe.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.header-basket {
+    background-image: url(../img/basket.svg);
+    width: 24px;
+    height: 24px;
+    margin: 0 30px;
+    position: relative;
+}
+
+.basket-count {
+    position: absolute;
+    background-color: #46A358;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 500;
+    right: -5px;
+    top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-login {
+    background-color: #46A358;
+    border-radius: 6px;
+    padding: 8px 17px 7px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-login::before {
+    content: " ";
+    background-image: url(../img/login.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+/* Кінець шапки */
+
+/* Початок основного блоку сайта */
+/* Початок банеру */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+    margin-top: 12px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding: 68px 0 85px 43px;
+    max-width: 580px;
+}
+
+.hero-subtitle {
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    color: #3D3D3D;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.planet-word {
+    color: #46A358;
+}
+
+.hero-description {
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 44px;
+}
+
+.hero-cta {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 10px 27px;
+    background-color: #46A358;
+    border-radius: 6px;
+    align-self: flex-start;
+}
+
+.hero-img{
+    display: block;
+}
+/* Кінець банеру */
+
+/* Початок секції каталог */
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    margin: 46px -10px 0;
+}
+
+/* початок сайтбару */
+.catalog-sidebar {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.bg-catalog-sidebar {
+    background-color: #FBFBFB;
+}
+
+.catalog-categories {
+    padding: 14px 22px 377px 17px;
+}
+
+.catalog-categories-title {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+.catalog-categories-list {
+    padding-left: 11px;
+    list-style: none;
+}
+
+.catalog-categories-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-categories-list a:hover {
+    color: #46A358;
+}
+
+.catalog-categories-list-count:hover {
+    color: #46A358;
+}
+
+.catalog-categories-list a {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.catalog-categories-list-count {
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 40px;
+}
+/* кінець сайдбару */
+
+/* початок блоку каталогу */
+.catalog-main {
+    width: 75%;
+    padding: 0 10px;
+}
+/* початок шапки каталогу */
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-filters-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.catalog-filters-list li {
+    list-style: none;
+}
+
+.catalog-filters-list a {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.catalog-filters-list a:hover {
+    color: #46A358;
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 5px;
+}
+
+.catalog-filters-list li:nth-child(2) {
+    padding: 0 40px;
+}
+
+.header-sort {
+    display: flex;
+    align-items: center;
+}
+
+.header-sort-text {
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.header-sort-default {
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 16px;
+    background-image: url(../img/arrow-sort.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+    padding-left: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* кінець шапки каталогу */
+/* початок основної секції каталогу */
+.catalog-products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 31px -10px 0;
+}
+
+.product-card {
+    width: 33.333%;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.product-card:hover .quick-access-box {
+    display: flex;
+}
+
+.product-card:hover .product-card-block-img {
+    border-top-color: #46A358;
+}
+
+.discount-green {
+    position: absolute;
+    left: 0px;
+    top: 14px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    background-color: #46A358;
+    text-transform: uppercase;
+    padding: 7px 8px;
+}
+
+.product-card-block-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBFBFB;
+    height: 300px;
+    position: relative;
+    border-top: 1px solid transparent;
+}
+
+.quick-access-box {
+    width: 134px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4px;
+}
+
+.quick-access-items {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 7px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.quick-access-items svg:hover path {
+    fill: #46A358;
+}
+
+.product-card-name {
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.product-card-cost {
+    color: #46A358;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    position: relative;
+}
+
+.discount-grey {
+    position: absolute;
+    left: 98px;
+    bottom: 3px;
+    color: #A5A5A5;
+    font-size: 18px;
+    line-height: 16px;
+    text-decoration: line-through;
+}
+/* кінець основної секції каталогу */
+/* початок пагінатора для катологу */
+.paginator-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.catalog-paginator {
+    max-width: 215px;
+    display: flex;
+    gap: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.catalog-paginator a {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+}
+
+.catalog-paginator a:hover {
+    font-weight: 700;
+    background-color: #46A358;
+    border: 1px solid #46A358;
+    color: #ffffff;
+}
+
+.catalog-paginator a:hover path {
+    stroke: #ffffff;
+}
+/* кінець пагінатора для каталогу */
+/* Кінець секції каталог */
+
+/* початок рекламних банерів */
+.advertising {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.advertising-content {
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+}
+
+.advertising-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 23px;
+    padding: 62px 20px 62px 0px;
+}
+
+.advertising-title {
+    color: #3D3D3D;
+    text-align: right;
+    max-width: 153px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.advertising-description {
+    max-width: 292px;
+    color: #727272;
+    text-align: right;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.advertising-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 11px 29px 9px 28px;
+    background-color: #46A358;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.advertising-button::after {
+    content: '';
+    background-image: url(../img/arrow-find-more.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 18px;
+    height: 18px;
+    margin-left: 2px;
+}
+/* кінець рекламних банерів */
+
+/* початок блоку з блогом */
+.block-our-blog {
+    display: flex;
+    flex-direction: column;
+    margin-top: 138px;
+    margin-bottom: 68px;
+}
+
+/* блок з заголовком та параграфом*/
+/* заголовок */
+.block-our-blog-title {
+    align-self: center;
+    color: #3D3D3D;
+    font-size: 30px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+/* заголовок */
+/* параграф */
+.block-our-blog-description {
+    align-self: center;
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+/* параграф */
+/* блок з заголовком та параграфом*/
+
+/* блок з картками */
+.block-our-blog-card {
+    display: flex;
+    margin: 0 -10px;
+}
+
+.blog-card-container {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.bg-blog-card-container {
+    background-color: #FBFBFB;
+}
+
+.blog-card-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* картка в блозі */
+.blog-card-content {
+    padding: 9px 0px 12px 15px;
+}
+
+.blog-card-meta {
+    color: #46A358;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.blog-card-title {
+    max-width: 189px;
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 4px;
+}
+
+.blog-card-description {
+    max-width: 242px;
+    color: #727272;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 4px;
+    margin-bottom: 9px;
+}
+
+.blog-card-read-more {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.blog-card-read-more::after {
+    content: '';
+    background-image: url(../img/arrow-read-more.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 13px;
+    height: 9px;
+    margin-left: 3px;
+}
