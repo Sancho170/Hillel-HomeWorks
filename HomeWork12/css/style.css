@@ -687,13 +687,22 @@
     background-color: #FBFBFB;
 }
 
+.blog-card-image-container{
+    position: relative;
+    overflow: hidden;
+}
+
 .blog-card-image-container img {
     width: 100%;
     height: auto;
     display: block;
+    transform-origin: center;
 }
 
-
+.blog-card-image-container img:hover{
+    transform: rotate(30deg) scale(1.5);
+    transition: 400ms;
+}
 
 /* картка в блозі */
 .blog-card-content {
@@ -711,7 +720,7 @@
     line-height: 16px;
 }
 
-.blog-card-title {
+.blog-card-title-ref h2{
     text-decoration: none;
     max-width: 189px;
     color: #3D3D3D;
@@ -721,7 +730,13 @@
     margin-top: 4px;
 }
 
-.blog-card-description {
+.blog-card-title-ref h2:hover{
+    color: #0A5819;
+    transition: 400ms;
+}
+
+.blog-card-description{
+    text-decoration: none;
     max-width: 242px;
     color: #727272;
     font-size: 14px;
@@ -748,6 +763,7 @@
     width: 13px;
     height: 9px;
     margin-left: 3px;
+    margin-top: 4px;
 }
 
 .blog-card-read-more:hover{
