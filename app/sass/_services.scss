@@ -1,0 +1,90 @@
+@use 'variables';
+.services{
+    &__box{
+        padding-bottom: 30px;
+    }
+    &__ref{
+        color: variables.$active-regular;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        &::after{
+            content: '';
+            background-image: url(../img/arrow.svg);
+            background-repeat: no-repeat;
+            width: 12px;
+            height: 12px;
+        }
+        &:active{
+            color: variables.$accent;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        background: variables.$gradient-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__grid{
+        display: grid;
+        grid-template-rows: repeat(6,auto);
+        grid-template-columns: auto;
+        row-gap: 30px;
+        padding-bottom: 60px;
+        &-icon{
+            background-color: #fff;
+            padding: 14px;
+            border-radius: 24px;
+            display: inline-flex;
+        }
+        &-title{
+            color: variables.$active-regular;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        &-description{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .services{
+        &__box{
+            padding-bottom: 60px;
+        }
+        &__grid{
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(3,auto);
+            gap: 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .services{
+
+        &__grid{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto auto;
+            gap: 60px;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .services{
+        &__ref:hover{
+            color: variables.$accent;
+            transition: 300ms;
+        }
+    }
+}

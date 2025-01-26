@@ -1,0 +1,96 @@
+@use 'variables';
+.team{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__box{
+        background-color: variables.$grey-bg;
+        border-radius: 12px 12px 0 0;
+        max-width: 558px;
+        &-image{
+            height: 500px;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+            display: block;
+        }
+    }
+    &__container{
+        background-color: variables.$grey-bg;
+        max-width: 558px;
+        padding: 30px;
+    }
+    &__content{
+        margin-bottom: 30px;
+        &-ref{
+            color: variables.$active-regular;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            &::after{
+                content: '';
+                background-image: url(../img/arrow.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 12px;
+            }
+            &:active{
+                color: variables.$accent;
+            }
+        }
+        &-title{
+            font-size: 30px;
+            background: variables.$gradient-red-text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__author-name{
+        font-size: 16px;
+        color: variables.$grey-text;
+        margin-bottom: 6px;
+        display: block;
+        max-width: 220px;
+    }
+    &__author-role{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: variables.$grey-text;
+    }
+}
+
+@media (min-width: 1024px) {
+    .team {
+        flex-direction: row;
+        align-items: stretch;
+        &__box {
+            
+            &-image {
+                height: 100%;
+                width: 400px; 
+                object-fit: cover; 
+            }
+        }
+        &__container {
+            flex: 1; 
+            padding: 30px;
+            max-width: none; 
+        }
+    }
+}
+
+
+@media (min-width: 1440px){
+    .team{
+
+        &__content-ref:hover{
+            color: variables.$accent;
+            transition: 300ms;
+        }
+    }
+}

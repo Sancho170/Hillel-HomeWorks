@@ -1,0 +1,31 @@
+@use 'variables';
+.solution-provider {
+    padding-top: 129px;
+    padding-bottom: 159px;
+    position: relative;
+    &__text {
+        color: #fff;
+        font-size: 38px;
+        text-align: center;
+
+    }
+    &__scroll{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        &:active circle{
+            stroke: variables.$accent;
+        }
+        &:active path{
+            stroke: variables.$accent;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .solution-provider{
+        padding-top: 269px;
+        padding-bottom: 489px;
+    }
+}

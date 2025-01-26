@@ -1,0 +1,92 @@
+@use 'variables';
+.grid-article{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    &__item{
+        background-color: #fff;
+        border-radius: 8px 8px 0 0;
+    }
+    &__box-image{
+        height: 200px;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        display: block;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px;
+        &-ref{
+            color: variables.$active-regular;
+            font-size: 16px;
+            text-decoration: none;
+            &:active{
+                color: variables.$accent;
+            }
+        }
+        &-date{
+            color: variables.$grey-text;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        &-description{
+            color: #000;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            border-top: 4px solid variables.$grey-separator;
+            padding-top: 15px;
+            max-width: 255px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .grid-article{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        justify-items: center   ;
+        gap: 30px;
+        &__item:nth-of-type(3){
+            grid-column-start: -3;
+            grid-row-start: 2;
+            grid-column-end: 3;
+        }
+        &__box{
+            max-width: 558px;
+        }
+        &__content{
+            max-width: 558px;
+        }
+        &__content-description{
+            max-width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .grid-article{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        column-gap: 30px;
+        &__item:nth-of-type(3){
+            grid-column: 3 / 4;
+            grid-row-start: 1;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .grid-article{
+
+        &__content-ref:hover{
+            color: variables.$accent;
+            transition: 300ms;
+        }
+    }
+}
